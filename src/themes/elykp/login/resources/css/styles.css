@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form-control {
+  @apply input input-bordered w-full input-primary;
+}
+
+body > div {
+  @apply max-w-lg mx-auto mt-10;
+}
+
+.kc-logo-text {
+  @apply mb-12 font-bold text-center text-3xl;
+}
+
+#kc-page-title {
+  @apply mb-5 font-medium text-xl;
+}
+
+form {
+  @apply space-y-5;
+}
+
+form > div {
+  @apply flex flex-col gap-2;
+}
+
+.form-label {
+  @apply font-medium;
+}
+
+span[id^="input-error"] {
+  @apply text-error;
+}
+
+.login-card {
+  @apply card bg-base-200 p-10 mx-auto;
+}
+
+.button {
+  @apply btn btn-primary btn-block;
+}
+
+hr {
+  @apply divider border-t-0;
+}
+
+#kc-social-providers h4 {
+  @apply text-center mb-5;
+}
+
+#kc-social-providers ul {
+  @apply flex flex-col justify-center gap-5;
+}
+
+#social-google {
+  @apply btn btn-block text-white bg-[#DB4437] hover:bg-red-600;
+}
+
+.checkbox > label {
+  @apply flex items-center gap-2;
+}
+
+input[type="checkbox"] {
+  @apply checkbox checkbox-primary checkbox-sm;
+}
+
+.form-setting {
+  @apply flex flex-row justify-between;
+}
+
+a {
+  @apply link link-hover;
+}
+
+.login-signup {
+  @apply mt-5;
+}
+
+#kc-registration {
+  @apply text-center;
+}
+
+.custom-divider {
+  @apply divider my-8;
+}
+
+#kc-content-wrapper .alert-success {
+  @apply mb-5;
+}
