@@ -1,13 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap");
+
+html {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
 
 .form-control {
   @apply input input-bordered w-full input-primary;
-}
-
-body > div {
-  @apply max-w-lg mx-auto mt-10;
 }
 
 .kc-logo-text {
@@ -88,4 +93,8 @@ a {
 
 #kc-content-wrapper .alert-success {
   @apply mb-5;
+}
+
+.form-signin {
+  @apply m-0 max-w-lg h-full;
 }

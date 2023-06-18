@@ -9,7 +9,7 @@ services:
     env_file:
       - .env
     volumes:
-      - ./db-init.sh:/docker-entrypoint-initdb.d/db-init.sh
+      - ./db-init.sql:/docker-entrypoint-initdb.d/db-init.sql
       - ./postgres:/var/lib/postgresql/data
   identity:
     build:

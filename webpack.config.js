@@ -10,7 +10,6 @@ const getEntries = () => {
 };
 
 module.exports = {
-  mode: "production",
   entry: getEntries(),
   output: {
     path: path.join(__dirname, "dist"),
